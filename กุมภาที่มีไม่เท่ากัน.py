@@ -14,10 +14,15 @@
 # โดยจะให้รับค่าเข้าไปเป็นปี (ค.ศ.) และ ให้แสดงผลออกมาทางหน้าจอว่าปีดังกล่าวเป็นปีอธิกสุรทินหรือไม่ ถ้าใช่ให้แสดงว่า "Leap Year" 
 # แต่ถ้าหากไม่ใช่ก็ให้แสดงว่า "Not a Leap Year" โดยให้เราพัฒนาโปรแกรมดังกล่าว โดยดูตัวอย่างได้จากกรณีทดสอบด้านล่าง
 
-a = int(input())
-b = a % 4 
+input_year = int(input())
+def is_leap(year):
+    if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+        return True
 
-if b == 0 :
-    print('Leap Year')
-elif b != 0 :
-    print('Not a Leap Year')
+
+    return False
+
+if is_leap(input_year):
+    print("Leap Year")
+else:
+    print("Not a Leap Year")
