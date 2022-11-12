@@ -8,8 +8,8 @@
 Name = str(input(""))
 years = int(input())
 
+age = 2022-years
 
-print(age)
 if age >= 18 :
     print(f'Welcome {Name} i to NongGipsy Pub')
 elif age < 18  :
