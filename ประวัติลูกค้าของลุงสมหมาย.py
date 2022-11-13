@@ -1,0 +1,11 @@
+Fname = str(input())
+Lname = str(input())
+address =  str(input())
+gender = str(input())
+tel = str(input())
+
+print('--- Customer Detail ---')
+print(f'Name : {Fname} {Lname}')
+print(f'Address : {address}')
+print(f'Gender : {gender}')
+print(f'Tel : {tel}')
